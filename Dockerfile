@@ -20,4 +20,6 @@ COPY config.py ./.jupyter/jupyter_notebook_config.py
 ENV PATH=/home/${USER}/.local/bin:${PATH}
 RUN pip install --user -r requirements.txt
 
+EXPOSE 8080
+
 ENTRYPOINT ["jupyter", "lab"]
