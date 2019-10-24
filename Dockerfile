@@ -1,4 +1,9 @@
-FROM python:3.7-slim
+FROM ubuntu:bionic
+
+RUN apt update && \
+    apt install -y python3.7 python3-pip && \
+    update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1 && \
+    pip install --upgrade pip
 
 ARG USER=jupyter
 ARG UID=1000

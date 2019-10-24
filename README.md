@@ -1,6 +1,6 @@
 # Jupyter Lab Base
 
-_Barebone install of `jupyterlab`_
+_Barebone install of `jupyterlab` on ubuntu:bionic_
 
 Example run:
 ```sh
